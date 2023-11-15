@@ -1,7 +1,9 @@
 # portfolio
 Il s'agit du code source de mon portfolio
 
-# License
+## License et citations
+
+### License
 
 Cette œuvre est mise à disposition selon les termes de la
 [Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).

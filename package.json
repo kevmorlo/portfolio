@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Ceci est le code source de mon portfolio, celui-ci à été développé par Kévin Lebeau et est disponible sous la licence CC BY-SA 4.0 délivrée par Creative Commons",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./static/css/style.scss ./static/css/style.css"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kévin Lebeau",
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
