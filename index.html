@@ -3,91 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
     <title>Kévin Lebeau</title>
 </head>
 <body>
     <header>
-        <img src="./static/img/pdp_kl.jpg" alt="Photo Kévin Lebeau">
-        <nav>
-            <ul>
-                <li><a href="">A propos</a></li>
-                <li><a href="">Parcours</a></li>
-                <li><a href="">Expériences</a></li>
-                <li><a href="">Compétences</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Contact</a></li>
+        <img src="./static/img/pdp_kl.jpg" alt="Photo Kévin Lebeau" class="header_img">
+        <nav class="header_nav">
+            <ul class="nav_liste">
+                <li>
+                    <a href="#bio" class="nav_a">A propos</a>
+                </li>
+                <li>
+                    <a href="#parcours" class="nav_a">Parcours</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav_a">Expériences</a>
+                </li>
+                <li>
+                    <a href="#competences" class="nav_a">Compétences</a>
+                </li>
+                <li>
+                    <a href="#projets" class="nav_a">Projets</a>
+                </li>
+                <li>
+                    <a href="#certifications" class="nav_a">Certifications</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav_a">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="titre">
+        <section id="titre">
             <h1>
                 Kévin Lebeau<br>
                 <span class="h1-sous-titre">Développeur Full Stack</span>
             </h1>
         </section>
-        <section class="bio">
+        <section id="bio">
             <h2>A propos de moi</h2>
-            <p>Ma super bio</p>
+            <p>
+                Actuellement en deuxième année de BTS SIO à l'EPSI de Rennes, 
+                je suis un jeune développeur spécialisé dans le développement web. 
+                Je maîtrise aussi bien le front que le back-end.
+            </p>
         </section>
-        <section class="parcours">
-            <h2>Parcours</h2>
-            <p>Mon super parcours</p>
+        <section id="parcours">
+            <h2>Mes formations</h2>
+            <div class="conteneur">
+                <h3>
+                    <a href="https://epsi.fr" title="Visiter le site de l'EPSI" >
+                        <img src="./static/img/logo_epsi.png" alt="Logo de l'epsi" class="contenu_img">
+                        <p class="lien_h3">EPSI - L'école d'ingénierie informatique</p>
+                    </a>
+                </h3>
+                <p>
+                    Brevet de technicien supérieur (BTS), Services informatiques aux organisations, 
+                    Solutions logicielles et applications métiers
+                </p>
+                <span class="parcours_dates">
+                    sept. 2022 - juill. 2024
+                </span>
+            </div>
+            <div class="conteneur">
+                <h3>
+                    <a href="https://www.saintmartin-rennes.org/nos-etablissements/quartier-sainte-genevieve/" title="Visiter le site de Saint Martin">
+                        <img src="./static/img/logo_st_martin.png" alt="Logo de Saint Martin" class="contenu_img">
+                        <p class="lien_h3">Lycée Saint Martin - Quartier Sainte Genevieve</p>
+                    </a>
+                </h3>
+                <p>
+                    Baccalauréat général, Spécialités Mathématiques et Langues, Littératures et Cultures étrangères
+                </p>
+                <span class="parcours_dates">
+                    sept. 2019 - juill. 2022
+                </span>
+                <span class="parcours_niveau">
+                    Admis
+                </span>
         </section>
-        <section class="experience">
+        <section id="experience">
             <h2>Mes experiences professionnelles</h2>
-            <p>Mes supères experiences professionnelles</p>
+            <div class="conteneur">
+                <h3>
+                    <a href="https://https://www.asgolfsaintgregoire.fr/" title="Visiter le site du golf de Saint Grégoire">
+                        <img src="./static/img/logo_golf_st_gregoire.png" alt="Logo du golf" class="contenu_img">
+                        <p class="lien_h3">LACK GOLF</p>
+                    </a>
+                </h3>
+                <p>
+                    Lors de ce stage il m'a été demandé d'administrer une base de données de +1000 utilisateurs, 
+                    de communiquer pour l'entreprise qui m'a accueilli ainsi que d'administrer un site WordPress.
+                </p>
+                <span class="parcours_dates">
+                    juillet 2023
+                </span>
         </section>
-        <section class="competences">
+        <section id="competences">
             <div class="conteneur">
                 <h3>
-                    <img src="./static/img/programmation.png" alt=" ">
-                    <span>Compétences techniques</span>
+                    <div class="competences_conteneur">
+                        <img src="./static/img/programmation.png" alt="Compétences techniques" class="contenu_img">
+                        <p class="lien_h3">Compétences techniques</p>
+                    </div>
+                    <ul class="competences_liste">
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>Git</li>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                        <li>Laravel</li>
+                        <li>React</li>
+                        <li>NestJS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                    </ul>
                 </h3>
             </div>
             <div class="conteneur">
                 <h3>
-                    <img src="./static/img/soft-skills.png" alt=" ">
-                    <span>Langues</span>
+                    <div class="competences_conteneur">
+                        <img src="./static/img/globe.svg" alt="Langues" class="contenu_img">
+                        <p class="lien_h3">Langues</p>
+                    </div>
+                    <ul class="competences_liste">
+                        <li>Français : Langue maternelle</li>
+                        <li>Anglais : Niveau C1</li>
+                    </ul>
                 </h3>
             </div>
             <div class="conteneur">
                 <h3>
-                    <img src="./static/img/person.svg" alt=" ">
-                    <span>Soft skills</span>
-                </h3>
-            </div>
-            <div class="conteneur">
-                <h3>
-                    <img src="./static/img/person.svg" alt=" ">
-                    <span>Centres d'intérêts</span>
+                    <div class="competences_conteneur">
+                        <img src="./static/img/person.svg" alt="Centres d'intérêts" class="contenu_img">
+                        <p class="lien_h3">Centres d'intérêts</p>
+                    </div>
+                    <ul class="competences_liste">
+                        <li>Jeux vidéo</li>
+                        <li>AirSoft</li>
+                        <li>Golf</li>
+                    </ul>
                 </h3>
             </div>
         </section>
-        <section class="projets">
+        <section id="projets">
+            <h2>Mes projets</h2>
             <div class="conteneur">
-                <a href="" class="bouton_projet">
-                    <img src="" alt="">
+                <a href="https://github.com/kevmorlo/crm_python" class="bouton_projet">
+                    <img src="./static/img/crm_python.jpg" alt="CRM Python">
+                    <p>CRM Python</p>
                 </a>
-                <a href="" class="bouton_projet">
-                    <img src="" alt="">
+                <a href="https://github.com/kevmorlo/shifumi" class="bouton_projet">
+                    <img src="./static/img/shifumi.jpg" alt="Shifumi">
+                    <p>Shifumi</p>
                 </a>
-                <a href="" class="bouton_projet">
-                    <img src="" alt="">
+                <a href="https://github.com/kevmorlo/49.3_Clicker" class="bouton_projet">
+                    <img src="./static/img/49.3clicker.jpg" alt="49.3 Clicker">
+                    <p>49.3 Clicker</p>
                 </a>
             </div>
         </section>
-        <section class="contact">
-            <h2>Contact</h2>
+        <section id="certifications">
+            <h2>Mes certifications</h2>
+            <div class="conteneur">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Me contacter</h2>
             <ul>
                 <li>
-                    <a href="">
-                        <img src="" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/kevin-lebeau">
+                        <img src="./static/img/linkedin.svg" alt="LinkedIn">
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="" alt="GitHub">
+                    <a href="https://github.com/kevmorlo">
+                        <img src="./static/img/github.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:kevin.lebeau-pro@outlook.fr">
+                        <img src="./static/img/mail.svg" alt="Mail">
                     </a>
                 </li>
             </ul>

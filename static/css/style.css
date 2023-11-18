@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 400;
+  margin: 0px;
+  position: absolute;
+}
+
+header {
+  display: none;
+  position: fixed;
+}
+
+p {
+  display: flex;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+}
+.header_img {
+  margin: 5px;
+  display: flex;
+  height: 90%;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.nav_liste {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav_a {
+  font-weight: 400;
+}
+
+section {
+  margin: 10px;
+}
+
+#titre {
+  margin-top: 200px;
+  margin-bottom: 120px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.h1-sous-titre {
+  font-weight: 500;
+}
+
+.conteneur {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+h3 > a, .competences_conteneur {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.lien_h3 {
+  text-align: center;
+}
+
+.contenu_img {
+  width: 5%;
+}
+
+.parcours_dates, .parcours_niveau {
+  font-weight: 700;
+}
+
+.competences_liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  font-size: medium;
+  font-weight: 400;
+}
+
+#certifications {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
