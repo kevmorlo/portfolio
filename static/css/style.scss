@@ -4,6 +4,9 @@
 $taille_ordi_min: 800px;
 $taille_gap: 30px;
 $fond_header: #f5f5f5;
+$fond_footer: #f5f5f5;
+$hauteur_header: 100px;
+$hauteur_footer: 100px;
 
 // Gestion de l'affichage général
 
@@ -32,13 +35,34 @@ a {
     }
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+background-color: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: #888;
+border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background-color: #555;
+}
+
 // Gestion du header
 
 @media screen and (min-width: $taille_ordi_min) {
     header {
         display: flex;
         justify-content: space-between;
-        height: 80px;
+        height: $hauteur_header;
         width: 100%;
         background-color: $fond_header;
     }
@@ -48,6 +72,7 @@ a {
     margin: 5px;
     display: flex;
     height: 90%;
+    border-radius: 90px;
 }
 
 .header_nav {
@@ -66,6 +91,10 @@ a {
 
 .nav_a {
     font-weight: 400;
+}
+
+.nav_a:hover {
+    font-weight: 700;
 }
 
 // Gestion du main
@@ -94,6 +123,13 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 1.5em;
+}
+
+.titre_img {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    border-radius: 100%;
 }
 
 .h1-sous-titre {
@@ -166,13 +202,28 @@ h3 > a, .competences_conteneur {
 }
 
 .cv_a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     position: fixed;
     bottom: 30px;
     right: 30px;
 }
 
 .cv_img {
+    margin-left: auto;
+    margin-right: auto;
     width: 80px;
+}
+
+// Gestion du footer
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $taille_gap;
+    background-color: $fond_footer;
+    height: $hauteur_footer;
 }
 
 #certifications {
