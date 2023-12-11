@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
     <title>Kévin Lebeau</title>
 </head>
 <body>
@@ -14,32 +15,32 @@
         <nav class="header_nav">
             <ul class="nav_liste">
                 <li>
-                    <a href="#bio" class="nav_a">A propos</a>
+                    <a href="#bio" class="nav_a" id="b_bio">A propos</a>
                 </li>
                 <li>
-                    <a href="#parcours" class="nav_a">Parcours</a>
+                    <a href="#parcours" class="nav_a" id="b_parcours">Parcours</a>
                 </li>
                 <li>
-                    <a href="#experience" class="nav_a">Expériences</a>
+                    <a href="#experience" class="nav_a" id="b_experience">Expériences</a>
                 </li>
                 <li>
-                    <a href="#competences" class="nav_a">Compétences</a>
+                    <a href="#competences" class="nav_a" id="b_competences">Compétences</a>
                 </li>
                 <li>
-                    <a href="#projets" class="nav_a">Projets</a>
+                    <a href="#projets" class="nav_a" id="b_projets">Projets</a>
                 </li>
                 <li>
-                    <a href="#certifications" class="nav_a">Certifications</a>
+                    <a href="#certifications" class="nav_a" id="b_certifs">Certifications</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav_a">Contact</a>
+                    <a href="#contact" class="nav_a" id="b_contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="titre">
-            <img src="./static/img/pdp_kl.jpg" alt="Photo Kévin Lebeau" class="titre_img">
+            <img src="./static/img/photo_kl_btc.png" alt="Photo Kévin Lebeau" class="titre_img">
             <h1>
                 Kévin Lebeau<br>
                 <span class="h1-sous-titre">Développeur Full Stack</span>
@@ -49,7 +50,7 @@
             <h2>A propos de moi</h2>
             <p>
                 Actuellement en deuxième année de BTS SIO à l'EPSI de Rennes, 
-                je suis un jeune développeur spécialisé dans le développement web. 
+                je suis un jeune développeur spécialisé dans le développement web.
                 Je maîtrise aussi bien le front que le back-end.
             </p>
         </section>
@@ -105,6 +106,7 @@
                 </span>
         </section>
         <section id="competences">
+            <h2>Mes compétences</h2>
             <div class="conteneur">
                 <h3>
                     <div class="competences_conteneur">
@@ -123,6 +125,7 @@
                         <li>Linux</li>
                         <li>Windows</li>
                         <li>Laravel</li>
+                        <li>Flutter</li>
                         <li>React</li>
                         <li>NestJS</li>
                         <li>SASS</li>
@@ -205,7 +208,7 @@
     </main>
     <footer>
         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">© 2023 Kévin Lebeau</a>
-        <a href="">Mentions légales</a>
+        <a href="./templates/mentions_legales.html">Mentions légales</a>
     </footer>
 </body>
 </html>

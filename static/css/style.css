@@ -23,23 +23,19 @@ a:visited {
   color: black;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: #888;
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
@@ -55,6 +51,7 @@ a:visited {
 }
 .header_img {
   margin: 5px;
+  margin-left: 15px;
   display: flex;
   height: 90%;
   border-radius: 90px;
@@ -68,6 +65,7 @@ a:visited {
 
 .nav_liste {
   display: flex;
+  padding-right: 20px;
   align-items: center;
   flex-direction: row;
   gap: 30px;
@@ -82,15 +80,14 @@ a:visited {
   font-weight: 700;
 }
 
-section {
-  margin: 100px;
+@media screen and (min-width: 800px) {
+  section {
+    padding-top: 100px;
+  }
+  #titre {
+    padding-top: 200px;
+  }
 }
-
-#titre {
-  margin-top: 200px;
-  margin-bottom: 120px;
-}
-
 h1 {
   font-weight: 700;
   font-size: 3em;
@@ -123,6 +120,11 @@ h3 {
   display: flex;
   flex-direction: column;
   margin: 20px;
+}
+
+section > p {
+  margin: 20px;
+  text-align: center;
 }
 
 h3 > a, .competences_conteneur {
