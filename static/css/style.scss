@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 
 $taille_ordi_min: 900px;
+$taille_tel_max: 800px;
 $taille_gap: 30px;
 $fond_header: #f5f5f5;
 $fond_footer: #f5f5f5;
@@ -247,14 +248,28 @@ h3 > a, .competences_conteneur {
     flex-flow: column;
     justify-content: center;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 40px;
+    right: 20px;
 }
 
 .cv_img {
     margin-left: auto;
     margin-right: auto;
     width: 80px;
+}
+
+@media screen and (max-width: $taille_tel_max){
+    .cv_img {
+        width: 40px;
+    }
+
+    .cv_a {
+        bottom: 60px;
+    }
+
+    .cv_p{
+        font-size: smaller;
+    }
 }
 
 // Gestion du footer

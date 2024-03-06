@@ -223,8 +223,8 @@ h3 > a, .competences_conteneur {
   flex-flow: column;
   justify-content: center;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 20px;
 }
 
 .cv_img {
@@ -233,6 +233,17 @@ h3 > a, .competences_conteneur {
   width: 80px;
 }
 
+@media screen and (max-width: 800px) {
+  .cv_img {
+    width: 40px;
+  }
+  .cv_a {
+    bottom: 60px;
+  }
+  .cv_p {
+    font-size: smaller;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
