@@ -226,6 +226,10 @@ h3 > a, .competences_conteneur {
     width: 100px;
 }
 
+.img_projet:hover {
+    transform: scale(1.1);
+}
+
 .p_projet {
     font-size: medium;
     font-weight: 500;
