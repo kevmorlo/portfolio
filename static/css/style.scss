@@ -87,6 +87,11 @@ background-color: #555;
     display: flex;
     height: 90%;
     border-radius: 90px;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        transform: scale(0.9);
+    }
 }
 
 .header_nav {

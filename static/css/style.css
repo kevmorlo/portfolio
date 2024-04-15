@@ -66,6 +66,10 @@ a:visited:hover {
   display: flex;
   height: 90%;
   border-radius: 90px;
+  transition: 200ms ease-in-out;
+}
+.header_img:hover {
+  transform: scale(0.9);
 }
 
 .header_nav {
