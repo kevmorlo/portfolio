@@ -204,6 +204,10 @@ h3 > a, .competences_conteneur {
   font-weight: 400;
 }
 
+.synthese_img {
+  width: 100%;
+}
+
 #conteneur_projets {
   display: flex;
   flex-direction: row;
